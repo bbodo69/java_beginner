@@ -1,0 +1,22 @@
+			
+			//int readData = -1;
+			byte [] buffer = new byte [512];
+			while(/*(readData = */fis.read(buffer)/*)*/ != -1) {
+				fos.write(buffer, 0, (int)fis.read(buffer));
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}try {
+			fis.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			fos.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printSt
